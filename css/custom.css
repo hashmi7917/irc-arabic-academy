@@ -70,4 +70,8 @@
   #gallery .team-item img {
     height: auto;
   }
+
+  #social-icons [class*="fa-"] {
+    padding: 5px;
+  }
 }
