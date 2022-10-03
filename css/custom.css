@@ -5,6 +5,11 @@
   background-color: #cddc39 !important;
 }
 
+/* Nav Logo*/
+.irclogo {
+  max-width: 80px;
+}
+
 /* About */
 
 /* Activities */
@@ -58,7 +63,7 @@
 
 /* payment */
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   #payment {
     text-align: center;
   }
