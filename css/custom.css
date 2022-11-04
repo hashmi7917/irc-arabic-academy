@@ -10,6 +10,10 @@
   max-width: 80px;
 }
 
+.footer-logo {
+  padding-bottom: 20px;
+}
+
 /* About */
 
 /* Activities */
@@ -62,6 +66,10 @@
 }
 
 /* payment */
+.qr {
+  width: 100%;
+  max-width: 250px;
+}
 
 @media (max-width: 550px) {
   #payment {
