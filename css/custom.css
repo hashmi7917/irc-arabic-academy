@@ -36,6 +36,10 @@
   font-size: 40px;
 }
 
+#services .service-item {
+  border-radius: 18px;
+}
+
 #services .service-item:hover {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -77,6 +81,13 @@
   transition: 0.5s ease-in-out !important;
 }
 
+#gallery3 img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
 /* payment */
 .qr {
   width: 100%;
@@ -86,7 +97,7 @@
 /* Parralax */
 .irc-parallax {
   /* The image used */
-  background-image: url("img_parallax.jpg");
+  background: url("../assets/slider1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
