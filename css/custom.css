@@ -1,5 +1,17 @@
 /* Custom CSS */
 
+/* slider */
+#irc-slider .w-100 {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.advfaiz {
+  object-fit: contain !important;
+}
+
 /* btn */
 .bg-secondary {
   background-color: #cddc39 !important;
@@ -69,6 +81,21 @@
 .qr {
   width: 100%;
   max-width: 250px;
+}
+
+/* Parralax */
+.irc-parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 550px) {
