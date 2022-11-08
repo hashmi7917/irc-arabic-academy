@@ -8,6 +8,7 @@
   object-fit: cover;
 }
 
+/* about image */
 .advfaiz {
   object-fit: contain !important;
 }
@@ -22,16 +23,21 @@
   max-width: 80px;
 }
 
+/* Footer */
 .footer-logo {
   padding-bottom: 20px;
 }
 
 /* About */
+.position-relative.overflow-hidden.h-100 {
+  background-color: #19875442;
+  border-radius: 18px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
 /* Activities */
 
 /* Services */
-
 #services .faicons [class*="fa-"] {
   font-size: 40px;
 }
@@ -83,7 +89,6 @@
 
 #gallery3 img {
   width: 100%;
-  max-width: 300px;
   max-height: 250px;
   object-fit: cover;
 }
@@ -120,5 +125,26 @@
 
   #social-icons [class*="fa-"] {
     padding: 5px;
+  }
+  #about .col-lg-6:nth-child(2) {
+    text-align: center !important;
+  }
+
+  #about .row.g-5 {
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #gallery .team-item img {
+    height: auto;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    background-color: var(--dark);
+    border: 6px solid var(--dark);
+    border-radius: 3rem;
   }
 }
