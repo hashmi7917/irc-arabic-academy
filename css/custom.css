@@ -132,6 +132,18 @@
   object-fit: cover;
 }
 
+/* #videos img {
+  width: 100%;
+  min-height: 25px;
+  object-fit: cover;
+} */
+
+iframe {
+  width: 100%;
+  min-height: 300px;
+  min-width: 400px;
+}
+
 /* payment */
 .qr {
   width: 100%;
