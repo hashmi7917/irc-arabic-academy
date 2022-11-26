@@ -32,17 +32,17 @@
   });
 
   // Back to top button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $(".back-to-top").fadeIn("slow");
-    } else {
-      $(".back-to-top").fadeOut("slow");
-    }
-  });
-  $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
-    return false;
-  });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 300) {
+  //     $("btn-back-to-top").fadeIn("slow");
+  //   } else {
+  //     $("btn-back-to-top").fadeOut("slow");
+  //   }
+  // });
+  // $("btn-back-to-top").click(function () {
+  //   $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+  //   return false;
+  // });
 
   // Causes progress
   $(".causes-progress").waypoint(
@@ -77,15 +77,24 @@
   });
 })(jQuery);
 
-// backToTopButton
-//Get the button
+// Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
 
-function backToTop() {
-  window.scroll({ top: 0, behavior: "smooth" });
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
