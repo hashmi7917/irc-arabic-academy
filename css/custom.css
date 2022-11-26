@@ -132,12 +132,7 @@
   object-fit: cover;
 }
 
-/* #videos img {
-  width: 100%;
-  min-height: 25px;
-  object-fit: cover;
-} */
-
+/* video iframe */
 iframe {
   width: 100%;
   min-height: 200px;
