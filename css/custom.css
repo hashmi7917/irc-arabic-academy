@@ -89,20 +89,54 @@
 
 #social-icons {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 16px;
+}
+
+#social section a.btn.btn-dark.m-1.mx-4:hover {
+  scale: 1.2;
 }
 
 .col-lg-6.px-5.text-end i:hover {
   color: #8ae34e;
 }
 
-#social-icons:hover {
+/* #social-icons:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+} */
+
+/* soccial academy */
+#socialacademy section {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#social-icons [class*="fa-"]:hover {
+#socialacademy section {
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  border-radius: 16px;
+}
+
+#socialacademy [class*="fa-"] {
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+
+#socialacademy a.btn {
+  border: none;
+}
+
+#socialacademy a.btn.btn-dark.m-1.mx-4:hover {
   scale: 1.2;
+}
+
+/* social icons bar*/
+#social [class*="fa-"] {
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+
+#social a.btn {
+  border: none;
 }
 
 /* gallery */
@@ -136,7 +170,8 @@
 iframe {
   width: 100%;
   min-height: 200px;
-  /* min-width: 380px; */
+  /* max-width: 400px; */
+  border-radius: 8px;
 }
 
 /* payment */
@@ -154,6 +189,18 @@ iframe {
   min-height: 500px;
 
   /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* custom parralax */
+.custom-parallax {
+  background: url("../assets/social.jpg");
+  filter: grayscale(90%);
+
+  min-height: 200px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
