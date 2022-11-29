@@ -198,7 +198,7 @@ iframe {
 /* custom parralax */
 .custom-parallax {
   background: url("../assets/social.jpg");
-  filter: grayscale(90%);
+  filter: grayscale(100%);
 
   min-height: 200px;
   background-attachment: fixed;
@@ -217,9 +217,9 @@ iframe {
   }
 
   /* icons */
-  #social-icons [class*="fa-"] {
+  /* #social-icons [class*="fa-"] {
     padding: 5px;
-  }
+  } */
 
   #about .col-lg-6:nth-child(2) {
     text-align: center !important;
@@ -238,6 +238,22 @@ iframe {
 }
 
 @media (max-width: 760px) {
+  #socialacademy a.btn.btn-dark.m-1.mx-4 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #socialacademy section a.btn.btn-dark.m-1.mx-4:hover {
+    scale: 0.9;
+  }
+
+  #social a.btn.btn-dark.m-1.mx-4 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #social section a.btn.btn-dark.m-1.mx-4:hover {
+    scale: 0.9;
+  }
   #gallery .team-item img {
     height: auto;
   }
